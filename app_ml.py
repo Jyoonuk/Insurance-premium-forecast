@@ -20,7 +20,7 @@ def run_ml():
     radio_menu = ['남자','여자']
     gender = st.radio('선택하세요',radio_menu)
     if gender == '여자' :
-        gender = 0
+        gender = 0  
     else :
         gender = 1
 
