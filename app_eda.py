@@ -1,3 +1,4 @@
+from scipy.misc import ascent
 import streamlit as st
 import sklearn
 import numpy as np
@@ -37,6 +38,9 @@ def run_eda():
     st.dataframe(df_max)
     st.text("{}컬럼의 최소값에 해당하는 데이터 .".format(selected_col))
     st.dataframe(df_min)
+
+    st.text('보험료를 많이 내는 사람 5명')
+    st.dataframe(df1.sort_values('charges'),ascending = False).head(5)
 
     st.text('나이별 흡연 유무 평균치')
     st.dataframe(df1.groupby('age')['smoker'].mean().to_frame())
