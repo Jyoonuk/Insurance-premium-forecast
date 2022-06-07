@@ -25,13 +25,13 @@ def run_chart():
     if selected_list == col_list[0]  :
         fig = plt.figure()
         plt.hist(data= df ,  x = 'age', rwidth=0.8, bins =10)
-        plt.xlabel('나이')
+        plt.xlabel('age')
         st.pyplot(fig)
 
     elif selected_list == col_list[1]  :
         fig = plt.figure()
         plt.hist(data= df ,  x = 'sex', rwidth=0.8, bins =10)
-        plt.xlabel('점수')
+        plt.xlabel('sex')
         st.pyplot(fig)
 
     elif selected_list == col_list[2]  :
@@ -43,24 +43,24 @@ def run_chart():
     elif selected_list == col_list[3]  :
         fig = plt.figure()
         plt.hist(data= df ,  x = 'children', rwidth=0.8, bins =10)
-        plt.xlabel('자녀 수')
+        plt.xlabel('children')
         st.pyplot(fig)
     
     elif selected_list == col_list[4]  :
         fig = plt.figure()
         plt.hist(data= df ,  x = 'smoker', rwidth=0.8, bins =10)
-        plt.xlabel('흡연 유무')
+        plt.xlabel('smoker')
         st.pyplot(fig)
 
     elif selected_list == col_list[5]  :
         fig = plt.figure()
         plt.hist(data= df ,  x = 'region', rwidth=0.8, bins =10)
-        plt.xlabel('지역')
+        plt.xlabel('region')
         st.pyplot(fig)
     elif selected_list == col_list[6]  :
         fig = plt.figure()
         plt.hist(data= df ,  x = 'charges', rwidth=0.8, bins =10)
-        plt.xlabel('보혐료')
+        plt.xlabel('charges')
         st.pyplot(fig)
 
     st.subheader('데이터 컬럼별 상관계수')

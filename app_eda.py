@@ -41,4 +41,5 @@ def run_eda():
     st.text('나이별 흡연 유무 평균치')
     st.dataframe(df1.groupby('age')['smoker'].mean().to_frame())
 
+    st.dataframe(df1.groupby('region')['smoker'].mean().to_frame())
  
