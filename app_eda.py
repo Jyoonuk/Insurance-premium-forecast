@@ -33,9 +33,12 @@ def run_eda():
     df_max = df.loc[df[selected_col] == df[selected_col].max() , ]
     df_min = df.loc[df[selected_col] == df[selected_col].min() , ]
 
-    st.text("{}컬럼의 최대값에 해당하는 데이터 입니다.".format(selected_col))
+    st.text("{}컬럼의 최대값에 해당하는 데이터 .".format(selected_col))
     st.dataframe(df_max)
-    st.text("{}컬럼의 최소값에 해당하는 데이터 입니다.".format(selected_col))
+    st.text("{}컬럼의 최소값에 해당하는 데이터 .".format(selected_col))
     st.dataframe(df_min)
+
+    st.text('나이별 흡연 유무 평균치')
+    st.dataframe(df1.groupby('age')['smoker'].mean().to_frame())
 
  
