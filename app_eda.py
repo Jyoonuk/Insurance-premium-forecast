@@ -34,15 +34,30 @@ def run_eda():
     df_max = df.loc[df[selected_col] == df[selected_col].max() , ]
     df_min = df.loc[df[selected_col] == df[selected_col].min() , ]
 
-    st.text("{}컬럼의 최대값에 해당하는 데이터 .".format(selected_col))
+    st.subheader("{}컬럼의 최대값에 해당하는 데이터 .".format(selected_col))
     st.dataframe(df_max)
-    st.text("{}컬럼의 최소값에 해당하는 데이터 .".format(selected_col))
+    st.subheader("{}컬럼의 최소값에 해당하는 데이터 .".format(selected_col))
     st.dataframe(df_min)
 
-    
+    st.subheader('나이별 보험료 평균금액')
+    st.dataframe(df1.groupby('age')['charges'].mean().to_frame())
 
-    st.text('나이별 흡연 유무 평균치')
+    st.subheader('나이별 흡연 유무 평균치')
     st.dataframe(df1.groupby('age')['smoker'].mean().to_frame())
 
-    st.dataframe(df1.groupby('region')['smoker'].mean().to_frame())
+    st.subheader('나이별 bmi 평균치')
+    st.dataframe(df1.groupby('age')['bmi'].mean().to_frame())
+
+    st.subheader('지역별 보혐료 평균금액')
+    st.text('southwest : 0 , southeast : 1 , northwest : 2 , northeast : 3')
+    st.dataframe(df1.groupby('region')['charges'].mean().to_frame())
  
+    st.subheader('지역별 흡연 유무')
+    st.dataframe(df1.groupby('region')['smoker'].mean().to_frame())
+
+    st.subheader('지역별 bmi 평균치')
+    st.dataframe(df1.groupby('region')['smoker'].mean().to_frame())
+
+    
+ 
+     
