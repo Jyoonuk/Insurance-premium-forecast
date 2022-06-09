@@ -1,7 +1,7 @@
 # Insurance-premium-forecast( 보험료에 대한 데이터 분석과 보험료 예측 ) 
 + 보험료에 대해서 데이터를 분석하고
 + 인공지능으로 학습을 시켜서
-+ 보험료를 예측하는 웹 입니다. 
++ 보험료를 예측하는 앱 입니다. 
 + 사용한 언어 : python 
 + 데이터 출처 : https://www.kaggle.com/datasets/noordeen/insurance-premium-prediction
 + 웹 주소 : http://15.164.229.97:8503/
