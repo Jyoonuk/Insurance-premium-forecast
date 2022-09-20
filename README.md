@@ -18,4 +18,4 @@
 + 컬럼에 따라 데이터를 분석하고 시각화 했다 .
 
 예측
-+ MinMax Scaler를 이용해 데이터를 스케일링하고 train_test_split을 하고 머신러닝 linearregression을 통해 charge 컬름을 예측했다. 
++ MinMax Scaler를 이용해 데이터를 스케일링하고 train_test_split을 하고 머신러닝 linearregression을 통해 charge 컬을 예측했다. 
