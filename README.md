@@ -4,7 +4,7 @@
 + 보험료를 예측하는 앱 입니다. 
 + 사용한 언어 : python 
 + 데이터 출처 : https://www.kaggle.com/datasets/noordeen/insurance-premium-prediction
-+ 웹 주소 : http://15.164.229.97:8503/
++ 웹 주소 : http://ec2-15-164-229-97.ap-northeast-2.compute.amazonaws.com:8503
 
 # 데이터 컬럼 설명 
 + age : 나이 
